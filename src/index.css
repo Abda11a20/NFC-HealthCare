@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* ============================================================================
+ * NFC Healthcare — Design System
+ * Custom theme tokens and utility classes for Tailwind CSS v4.
+ * ============================================================================ */
+
+@theme {
+  --color-primary: #0f766e;
+}
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom reusable utility */
+@layer utilities {
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 0.75rem;
+  }
+}
